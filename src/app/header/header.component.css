@@ -1,0 +1,41 @@
+nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #660000;
+    z-index: 10000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.right a:hover{
+  background-color: #990000
+}
+
+.data-target {
+    width: 0px;
+}
+
+.dropdown-content {
+    background-color: #4c0000;
+    margin-top: 50px;
+}
+
+.dropdown-content li {
+    border-bottom: solid 1px;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content li>a:hover {
+    background-color: #990000
+}
+
+.side-nav .collapsible-body li a,
+.side-nav.fixed .collapsible-body li a {
+    padding-left: 60px;
+}

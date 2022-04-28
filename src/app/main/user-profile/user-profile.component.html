@@ -1,0 +1,29 @@
+<div class="row" style="background-color:white;">
+    <div class="col m4 l4">
+        <ul id="user-profile-menu" class="side-nav fixed">
+            <li>
+                <div class="user-view">
+                    <div class="background" [ngStyle]="{'background-color':color}">
+                    </div>
+                    <a><img [src]="profilePicUrl" onerror="this.src='https://media.istockphoto.com/vectors/man-in-baseball-cap-vector-id1188943883?k=20&m=1188943883&s=612x612&w=0&h=_md4w8b3TX223c2go1BvwgxLS5q7cjDoQ1V46oGVxZQ='" alt="profile picture" class="circle responsive-img" style="max-width:150px;"></a>
+                    <a><span class="white-text name">{{name}}</span></a>
+                    <a><span class="white-text email">{{email}}</span></a>
+                </div>
+            </li>
+            <li><a [routerLink]="['myprofile']">My Profile</a></li>
+            <li><a [routerLink]="['myorders']">My Orders</a></li>
+            <li><a [routerLink]="['mybookings']">My Bookings</a></li>
+            <li><a [routerLink]="['myrewards']">My Rewards</a></li>
+            <div class="divider"></div>
+            <li><a (click)="logOut()">Logout</a></li>
+        </ul>
+    </div>
+    <!-- Profile division -->
+    <div class="col s12 m12 l8">
+        <div class="row" style="background-color:#fff;">
+            <div class="col s12">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

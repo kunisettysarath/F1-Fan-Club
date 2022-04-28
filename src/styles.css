@@ -1,0 +1,38 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #990000;
+    border-radius: 5px;
+    padding:2px;
+    margin: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #660000; 
+}
+
+/* Common css for header-image */
+
+.header-image {
+  background-image: url('./assets/backdrops/Download-F1-Photos-1.jpg');
+  height: 300px;
+  width:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
