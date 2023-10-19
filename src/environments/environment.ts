@@ -5,5 +5,6 @@
 
 export const environment = {
   production: true,
-  currentServerURL : "http://localhost:3000"
+  currentServerURL : "https://f1-fan-club-api.onrender.com"
+  // currentServerURL : "http://localhost:3000"
 };
